@@ -27,9 +27,6 @@ l = 'dashabi'
 #     total_num +=1
 # print(total_num)
 
-
-
-
 # eval不支持逻辑代码,只支持一些简单的python代码
 # s1 = """
 # print(1 + 2)
@@ -40,4 +37,13 @@ l = 'dashabi'
 # exec(s1)
 
 # format()
-print("我得名字是{},我今年{}岁，我喜欢{}.".format())
+# print("我得名字是{},我今年{}岁，我喜欢{}.".format())
+
+l = [1,2,3,4]
+print(isinstance(l,list))
+
+# 2的3次方
+print(pow(2,3))
+
+# 四舍五入 -> 3.142
+print(round(3.14159,3))
