@@ -4,6 +4,9 @@ class Student():
     def __init__(self,name,age):   # 定义初始化属性,初始化属性会在实例化的时候执行类中的__init__方法。
         self.name = name
         self.age = age
+
+        print(locals())     # 获取类的属性返回一个字典
+
         # print(self)   # self就是类本身
         # print(f'初始化了name')
         # print(f'初始化了age')
@@ -17,6 +20,6 @@ a = Student('tom',14)
 
 print(Student.__dict__)
 
-print(a.__dict__)   # 返回对象初始化时候的参数
+print(a.__dict__)   # 返回对象初始化时候的参数是一个字典
 print(a.__class__)  # 返回对象的所属的类
 print(Student.__name__)   # 返回类的名称

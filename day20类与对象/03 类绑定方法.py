@@ -13,7 +13,6 @@ class Student():
         # print(f'初始化了name')
         # print(f'初始化了age')
 
-
     def say_hi(self):
         print(f'大家好我叫 {self.name}!')   # 为对象定制行为
 
