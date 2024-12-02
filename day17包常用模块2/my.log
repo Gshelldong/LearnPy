@@ -1,0 +1,5 @@
+[2024-11-22 16:48:29,083][MainThread:27632][task_id:自定义的loger][03 日志配置字典.py:71][INFO][好好的 不要浮躁 努力就有收获]
+[2024-11-22 16:50:04,413][MainThread:26940][task_id:root][03 日志配置字典.py:72][INFO][logging info!]
+[2024-11-22 16:50:31,629][MainThread:27264][task_id:log dict][03 日志配置字典.py:72][INFO][logging info!]
+[2024-11-22 16:53:21,475][MainThread:19796][task_id:log dict][03 日志配置字典.py:72][DEBUG][logging info!]
+[2024-11-22 16:53:36,504][MainThread:19120][task_id:log dict][03 日志配置字典.py:72][DEBUG][logging DEBUG!][2024-11-28 22:00:23,362][MainThread:31952][task_id:log dict][03 日志配置字典.py:71][DEBUG][logging DEBUG!]
