@@ -20,6 +20,6 @@ a = Student('tom',14)
 
 print(Student.__dict__)
 
-print(a.__dict__)   # 返回对象初始化时候的参数是一个字典
-print(a.__class__)  # 返回对象的所属的类
+print(a.__dict__)         # 返回对象初始化时候的参数是一个字典
+print(a.__class__)        # 返回对象的所属的类
 print(Student.__name__)   # 返回类的名称
