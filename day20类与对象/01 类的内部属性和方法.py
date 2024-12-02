@@ -20,6 +20,7 @@ class Student():
     # 类绑定方法
     # 这种方式可以让类方法访问类的属性
     # cls是类
+    # 在调用方法的时候会传入对象本身，在调用类.方法的时候不需要再传参数。
     @classmethod
     def show_school(cls):
         print(cls.school)  # 访问类的属性
