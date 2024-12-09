@@ -30,8 +30,6 @@ print(a.key)
 a.name = 'xx'
 print(a.name)
 
-
 print(a.key)
-
 
 del(a.key)
