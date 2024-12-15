@@ -11,8 +11,8 @@ def progress(percent):
 download_size = 0
 total_size=204800
 
-while download_size < total_size:
-    download_size += 10000
-    percent = download_size / total_size
-    time.sleep(0.2)
-    progress(percent)
+# while download_size < total_size:
+#     download_size += 10000
+#     percent = download_size / total_size
+#     time.sleep(0.2)
+#     progress(percent)
