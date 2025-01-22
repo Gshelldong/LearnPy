@@ -7,7 +7,7 @@ def test(name,i):
     print('%s is over'%name)
 
 if __name__ == '__main__':
-    # 使用循环的方式可以减少代码量
+    # 使用循环的方式可以减少代码量，启动多个进程
     # p_list = []
     # for i in range(3):
     #     p = Process(target=test,args=('进程%s'%i,i))
