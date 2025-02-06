@@ -11,11 +11,11 @@ class MyThread(Thread):
         self.name = name
 
     def run(self):
-        print('%s is running!'%self.name)
+        print('%s is running! '%self.name)
         time.sleep(3)
         print('%s is over!'%self.name)
 
 if __name__ == '__main__':
     t = MyThread('gong')
     t.start()
-    print('master')
+    print('主')

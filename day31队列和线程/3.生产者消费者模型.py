@@ -8,7 +8,7 @@
         供需不平衡的问题
 """
 
-from  multiprocessing import Process,Queue,JoinableQueue
+from  multiprocessing import Process,JoinableQueue
 import random
 import time
 
@@ -22,7 +22,7 @@ def provider(name,food,q):
 def consumer(name,q):
     while True:
         data = q.get()
-        if data == None:break
+        if data == None:break  # 如果队列中没有数据了就停止消费了
         print('%s吃了%s'%(name,data))
         time.sleep(random.random())
         q.task_done() # 告诉队列你已经从队列中取出一个数据并且处理完了
@@ -42,12 +42,15 @@ if __name__ == '__main__':
     p.start()  # 告诉操作系统要调度启动一个进程了
     p1.start()
 
-    c.daemon = True   #店铺没了食客也就没了
+    c.daemon = True   # 只要被吃完了，守护进程直接挂
     c1.daemon = True
     c.start()
     c1.start()
     p.join()    # 厨师会等待食客吃完
     p1.join()
 
-    q.join()  # 等待队列中的数据全部取出
+    # q.put(None) 食客吃完了放一个None到队列，让客户端知道确实不生产包子了从而结束客户端进程
+    # q.put(None)
+
+    q.join()  # 等待队列中的数据全部取出，这个是主进程
     print('食客吃完了')
