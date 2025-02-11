@@ -3,7 +3,7 @@ import socket
 from gevent import spawn
 
 server = socket.socket()
-server.bind(('127.0.0.1',8001))
+server.bind(('127.0.0.1',8081))
 server.listen(5)
 
 # 把连接循环和通信循环区分开
