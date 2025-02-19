@@ -20,7 +20,7 @@ def task(n):
 # 优化01.创建线程池
 if __name__ == '__main__':
     t_list = []
-    for i in range(20):
+    for i in range(20):  # 放入20个参数
         res = pool.submit(task,i)
         # print(res.result())  # 如果在在这里执行resault就会变成串行，原地等待每个任务的返回结果之后再依次向下执行
         t_list.append(res)
