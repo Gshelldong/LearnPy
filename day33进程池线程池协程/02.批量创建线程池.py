@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
     # 这里会在处理完成之后批量的把任务的结果返回，且结果是有序的
     for p in t_list:
-        print('>>>:',p.result())
+        print('>>>:',p.result())  # resault函数会获取函数的return
 
 """
 0 7460
